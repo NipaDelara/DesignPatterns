@@ -1,4 +1,8 @@
 package composite.organization;
 
-public class OrganizationComponent {
-}
+public interface OrganizationComponent {
+
+    double getSalary();
+    void printXML(String indent);
+    }
+
