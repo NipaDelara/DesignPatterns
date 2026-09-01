@@ -21,5 +21,14 @@ public class Main {
         System.out.println("After changing text:");
         System.out.println();
 
+        //change existing text
+        button.setText("Submit");
+        textField.setText("Enter email");
+        checkbox.setText("Stay signed in");
+
+        button.display();
+        textField.display();
+        checkbox.display();
+
     }
 }
