@@ -44,5 +44,10 @@ public class WeatherStation extends Thread {
                         + observer.getClass().getSimpleName()
         );
     }
+    private void notifyObservers(WeatherObserver observer) {
+        for (WeatherObserver observer2 : observers) {
+            observer2.update(temperature);
 
+        }
+    }
 }
