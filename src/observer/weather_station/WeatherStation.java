@@ -14,7 +14,7 @@ public class WeatherStation extends Thread {
     private final int MAX_TEMPERATURE = 35;
     private final int MIN_TEMPERATURE = -10;
 
-    private boolean running = true;
+    private volatile boolean running = true;
 
     public WeatherStation() {
         observers = new ArrayList<>();
@@ -44,10 +44,75 @@ public class WeatherStation extends Thread {
                         + observer.getClass().getSimpleName()
         );
     }
-    private void notifyObservers(WeatherObserver observer) {
-        for (WeatherObserver observer2 : observers) {
-            observer2.update(temperature);
+    private void notifyObservers() {
+        for (WeatherObserver observer : observers) {
+            observer.update(temperature);
 
         }
     }
+        private void updateTemperature() {
+
+            int change;
+
+            if (random.nextBoolean()) {
+                change = 1;
+            } else {
+                change = -1;
+            }
+
+            int newTemperature =
+                    temperature + change;
+
+            if (newTemperature >= MIN_TEMPERATURE
+                    && newTemperature <= MAX_TEMPERATURE) {
+
+                temperature = newTemperature;
+            }
+
+            System.out.println(
+                    "\nWeather Station: Temperature changed to "
+                            + temperature + "°C"
+            );
+
+            notifyObservers();
+        }
+        @Override
+        public void run() {
+
+            while (running) {
+
+                try {
+
+                    int waitTime =
+                            random.nextInt(5) + 1;
+
+                    Thread.sleep(
+                            waitTime * 1000L
+                    );
+
+                    updateTemperature();
+
+                } catch (InterruptedException e) {
+
+                    if (!running) {
+                        break;
+                    }
+
+                    Thread.currentThread().interrupt();
+                    break;
+                }
+            }
+
+            System.out.println(
+                    "\nWeather station stopped."
+            );
+        }
+
+        public void stopStation() {
+
+            running = false;
+
+            interrupt();
+    }
 }
+
