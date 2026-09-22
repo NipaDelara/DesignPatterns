@@ -1,4 +1,5 @@
 package state;
 
-public class NoviceState {
+public class NoviceState implements CharacterState{
+
 }
