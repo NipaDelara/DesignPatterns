@@ -20,7 +20,7 @@ public class GameCharacter {
         state.meditate(this);
     }
     public void fight() {
-        state.flight(this);
+        state.fight(this);
     }
 
     public void addExperience(int amount) {
