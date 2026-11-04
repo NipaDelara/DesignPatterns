@@ -1,4 +1,4 @@
-package chain_of_responsibility;
+package chain_of_responsibility; //Handles suggestions for improvements.
 
 public class DevelopmentSuggestionHandler extends Handler {
 

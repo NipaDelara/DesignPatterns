@@ -1,4 +1,4 @@
-package strategy;
+package strategy; //Compares and swaps nearby numbers. / পাশাপাশি সংখ্যা তুলনা করে বদলায়।
 
 public class BubbleSortStrategy implements SortingStrategy {
 

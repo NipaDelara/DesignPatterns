@@ -1,4 +1,4 @@
-package strategy;
+package strategy; //Interface that defines sorting. / Sorting-এর নিয়ম তৈরি করে।
 
 public interface SortingStrategy {
 

@@ -1,4 +1,5 @@
 package chain_of_responsibility;
+//Handles compensation or refund requests.
 
 public class CompensationHandler extends Handler {
 

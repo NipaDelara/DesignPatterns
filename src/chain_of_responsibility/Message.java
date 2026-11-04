@@ -1,5 +1,5 @@
 package chain_of_responsibility;
-
+//Message: Stores the customer's message, email, and feedback type.
 
 // Represents a customer feedback message
 public class Message {

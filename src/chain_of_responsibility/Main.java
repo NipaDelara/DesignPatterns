@@ -1,5 +1,5 @@
 package chain_of_responsibility;
-import java.util.Scanner;
+import java.util.Scanner;    //Creates messages, connects handlers, and runs the program.
 
 public class Main {
 

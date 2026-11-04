@@ -1,4 +1,4 @@
-package strategy;
+package strategy; //Selects the sorting algorithm. / কোন algorithm চলবে তা নির্বাচন করে।
 
 public class SortingContext {
 

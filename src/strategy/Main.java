@@ -1,5 +1,5 @@
-package strategy;
-
+package strategy; //Runs and tests all algorithms. / সব algorithm চালিয়ে পরীক্ষা করে।
+                    //strategy Pattern means one task, multiple interchangeable algorithms.
 import java.util.Random;
 
 public class Main {

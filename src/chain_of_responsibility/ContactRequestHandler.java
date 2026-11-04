@@ -1,4 +1,4 @@
-package chain_of_responsibility;
+package chain_of_responsibility;          //Handles customer contact requests.
 
 public class ContactRequestHandler extends Handler {
 

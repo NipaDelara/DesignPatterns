@@ -1,4 +1,4 @@
-package strategy;
+package strategy; //Sorts numbers using a pivot. / Pivot ব্যবহার করে সংখ্যা সাজায়।
 
 public class QuickSortStrategy implements SortingStrategy {
 

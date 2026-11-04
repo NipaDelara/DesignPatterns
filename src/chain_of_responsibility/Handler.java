@@ -1,4 +1,4 @@
-package chain_of_responsibility;
+package chain_of_responsibility; //Connects the handlers and passes messages to the next handler.
 
 public abstract class Handler {
 

@@ -1,4 +1,4 @@
-package chain_of_responsibility;
+package chain_of_responsibility; //Handles general customer feedback.
 
 public class GeneralFeedbackHandler extends Handler {
 

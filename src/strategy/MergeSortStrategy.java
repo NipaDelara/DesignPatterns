@@ -1,4 +1,4 @@
-package strategy;
+package strategy; //Divides and merges sorted numbers. / সংখ্যা ভাগ করে সাজিয়ে যুক্ত করে।
 
 public class MergeSortStrategy implements SortingStrategy {
 
