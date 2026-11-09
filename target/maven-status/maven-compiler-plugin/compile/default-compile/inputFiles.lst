@@ -68,3 +68,10 @@
 /Users/delara/Desktop/DesignPatterns/src/template_method/DiceGame.java
 /Users/delara/Desktop/DesignPatterns/src/template_method/Game.java
 /Users/delara/Desktop/DesignPatterns/src/template_method/Main.java
+/Users/delara/Desktop/DesignPatterns/src/visitor/Directory.java
+/Users/delara/Desktop/DesignPatterns/src/visitor/File.java
+/Users/delara/Desktop/DesignPatterns/src/visitor/FileSystemElement.java
+/Users/delara/Desktop/DesignPatterns/src/visitor/FileSystemVisitor.java
+/Users/delara/Desktop/DesignPatterns/src/visitor/Main.java
+/Users/delara/Desktop/DesignPatterns/src/visitor/SearchVisitor.java
+/Users/delara/Desktop/DesignPatterns/src/visitor/SizeCalculatorVisitor.java
