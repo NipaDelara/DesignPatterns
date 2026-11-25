@@ -1,4 +1,3 @@
-
 package adapter.calendar;
 
 import java.util.Scanner;
@@ -15,7 +14,7 @@ public class Main {
 
         System.out.println("=== Calendar Adapter ===");
 
-        try {
+        try{
             // Read date from user
             System.out.print("Enter year: ");
             int year = scanner.nextInt();

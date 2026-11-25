@@ -1,4 +1,3 @@
-
 package adapter.calendar;
 
 import java.util.Calendar;

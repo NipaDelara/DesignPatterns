@@ -3,7 +3,7 @@ package builder.computers;
 // Concrete Builder: creates a Gaming Computer
 public class GamingComputerBuilder implements ComputerBuilder {
 
-    private Computer computer;
+    private final Computer computer;
 
     // Create an empty computer
     public GamingComputerBuilder() {
